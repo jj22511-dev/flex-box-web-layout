@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+
+.header-image {
+    text-align: center;
+    width: 100%;
+    height: 8em;
+    line-height: 8em;
+    background-color: rgb(226, 224, 160);
+}
+
+nav {
+    display: flex;
+    background-color: rgb(91, 87, 87);
+}
+nav a {
+    color: white;
+    padding: .5em;
+}
+
+a:hover {
+    background-color: gray;
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    height: 30em;
+    line-height: 30em;
+}
+
+.content .side-panel {
+    text-align: center;
+    background-color: rgb(153, 224, 228);
+    flex: 30%;
+}
+
+.content .main-panel {
+    text-align: center;
+    background-color: rgb(205, 155, 223);
+    flex: 70%;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(130, 189, 130);
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .content, nav {
+      flex-direction: column;
+    }
+  }
